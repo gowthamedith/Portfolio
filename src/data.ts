@@ -1,8 +1,12 @@
 import { Project, Skill, ProcessStep, Achievement } from './types';
-
-// Let's use the exactly generated image paths for Gowtham's projects
-export const DESIGNER_AVATAR = '/src/assets/images/designer_avatar_pic_1782816741019.jpg';
-
+import designerAvatar from './assets/images/designer_avatar_pic_1782816741019.jpg';
+import realEstateWork from './assets/images/real_estate_work_1782816689911.jpg';
+import luxuryPropertyWork from './assets/images/luxury_property_work_1782816702744.jpg';
+import kpiDashboardWork from './assets/images/kpi_dashboard_work_1782816715480.jpg';
+import leadGenWork from './assets/images/lead_gen_work_1782816728048.jpg';
+ 
+export const DESIGNER_AVATAR = designerAvatar;
+ 
 export const PROJECTS_DATA: Project[] = [
   {
     id: 'enterprise-real-estate',
@@ -10,7 +14,7 @@ export const PROJECTS_DATA: Project[] = [
     category: 'Enterprise Product Design',
     tagline: 'Streamlining commercial property transaction pipelines.',
     description: 'An end-to-end web portal crafted for agents, brokers, and institutional investors to manage multi-million dollar property inventories, transaction tracking, and financial projections.',
-    image: '/src/assets/images/real_estate_work_1782816689911.jpg',
+    image: realEstateWork,
     tags: ['UX Strategy', 'Enterprise System', 'Responsive Design', 'Figma'],
     caseStudy: {
       role: 'Lead UI/UX Designer',
@@ -43,7 +47,7 @@ export const PROJECTS_DATA: Project[] = [
     category: 'High-End Consumer Experience',
     tagline: 'Elevating digital curation for premium international listings.',
     description: 'A rich visual discovery platform featuring curated residential gems. Tailored for ultra-high-net-worth individuals, prioritizing high-fidelity imagery, cinematic motion, and a custom booking experience.',
-    image: '/src/assets/images/luxury_property_work_1782816702744.jpg',
+    image: luxuryPropertyWork,
     tags: ['Visual Identity', 'Typography', 'Interactive Prototyping', 'Figma'],
     caseStudy: {
       role: 'Senior Product Designer',
@@ -75,7 +79,7 @@ export const PROJECTS_DATA: Project[] = [
     category: 'SaaS & Analytics',
     tagline: 'Synthesizing dense analytical indicators into actionable intelligence.',
     description: 'A comprehensive, responsive analytics dashboard designed for enterprise management to monitor revenue, customer conversion, regional sales, and performance metrics in real time.',
-    image: '/src/assets/images/kpi_dashboard_work_1782816715480.jpg',
+    image: kpiDashboardWork,
     tags: ['Dashboard Design', 'Data Visualization', 'UX Architecture', 'Design Systems'],
     caseStudy: {
       role: 'UI/UX Lead',
@@ -107,7 +111,7 @@ export const PROJECTS_DATA: Project[] = [
     category: 'Conversion Optimization',
     tagline: 'Perfecting responsive page layouts to skyrocket campaign returns.',
     description: 'A series of high-fidelity, high-converting responsive landing pages designed for premium marketing campaigns. Engineered with psychological visual anchors, responsive visual hierarchy, and fast-loading media.',
-    image: '/src/assets/images/lead_gen_work_1782816728048.jpg',
+    image: leadGenWork,
     tags: ['Responsive UI', 'A/B Testing', 'Conversion Optimization', 'ChatGPT'],
     caseStudy: {
       role: 'Conversion UI Specialist',
@@ -134,7 +138,7 @@ export const PROJECTS_DATA: Project[] = [
     }
   }
 ];
-
+ 
 export const SKILLS_DATA: Skill[] = [
   { name: 'UI Design', category: 'Core Design', level: 5, description: 'Creating visually stunning, accessible interface structures with high attention to spacing, hierarchy, and color harmony.' },
   { name: 'UX Design', category: 'Core Design', level: 5, description: 'Directing user journeys, information architecture, site mapping, and conducting target persona research.' },
@@ -148,7 +152,7 @@ export const SKILLS_DATA: Skill[] = [
   { name: 'Photoshop', category: 'Tools', level: 4, description: 'Image asset creation, photorealistic mockup editing, and creative hero banner adjustments.' },
   { name: 'ChatGPT & AI Tools', category: 'AI Tools', level: 5, description: 'Leveraging AI for rapid user persona generation, copywriting assistance, structured wireframe outlines, and user research synthesis.' }
 ];
-
+ 
 export const PROCESS_STEPS: ProcessStep[] = [
   {
     phase: '01',
@@ -193,7 +197,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     deliverables: ['Figma Token Map', 'Responsive Spec Sheet', 'QA Design Checklist']
   }
 ];
-
+ 
 export const ACHIEVEMENTS_DATA: Achievement[] = [
   {
     stat: '300+',
@@ -216,3 +220,4 @@ export const ACHIEVEMENTS_DATA: Achievement[] = [
     description: 'Cohesive workflow pairing with product managers, QA specialists, backend developers, and business stakeholders.'
   }
 ];
+ 
